@@ -20,3 +20,14 @@ Test              | 1M round time, sec
 ------------------|-------------------
 testBranchFree100 |  time.bench: 7.45 
 testSort100       | time.bench: 2.86 
+
+PSort
+===
+Psort halfs the calculation twice to O(n^2/2). it gains on really short array
+
+```
+PSortTest.testSort10: [measured 10000 out of 11000 rounds, threads: 1 (sequential)]
+.. time.bench: 0.03
+PSortTest.testPSort10: [measured 10000 out of 11000 rounds, threads: 1 (sequential)]
+.. time.bench: 0.02
+```
